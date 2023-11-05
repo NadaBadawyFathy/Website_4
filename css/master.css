@@ -371,14 +371,14 @@ header .container .nav:hover {
     gap: 20px;
 }
 .delivary .box:not(:last-child) {
-    border-right: 2px solid black;
+    border-right: 2px solid #ccc;
 }
 @media (max-width: 1200px) {
     .delivary .box {
         border: 0 !important;
     }
     .delivary .box {
-        border-bottom: 1px solid black !important;
+        border-bottom: 2px solid var(--main-color) !important;
     }
     hr {
         display: none;
