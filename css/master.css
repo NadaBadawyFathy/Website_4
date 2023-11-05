@@ -371,22 +371,17 @@ header .container .nav:hover {
     gap: 20px;
 }
 .delivary .box:not(:last-child) {
-    border-right: 2px solid #ccc;
+    border-right: 2px solid black;
 }
 @media (max-width: 1200px) {
     .delivary .box {
         border: 0 !important;
     }
-    .delivary .box:nth-child(1), .delivary .box:nth-child(2) {
-        border-bottom: 2px solid #ccc !important;
-    }
-}
-@media (max-width: 767px) {
     .delivary .box {
-        border: 0 !important;
+        border-bottom: 1px solid black !important;
     }
-    .delivary .box:not(:last-child) {
-        border-bottom: 1px solid #ccc !important;
+    hr {
+        display: none;
     }
 }
 .delivary .box h4 {
