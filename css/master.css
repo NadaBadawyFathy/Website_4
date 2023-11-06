@@ -372,6 +372,7 @@ header .container .nav:hover {
 }
 .delivary .box:not(:last-child) {
     border-right: 2px solid #ccc;
+    padding-bottom: 20px;
 }
 @media (max-width: 1200px) {
     .delivary .box {
@@ -379,6 +380,7 @@ header .container .nav:hover {
     }
     .delivary .box {
         border-bottom: 2px solid var(--main-color) !important;
+        padding-bottom: 20px;
     }
     hr {
         display: none;
@@ -413,3 +415,138 @@ header .container .nav:hover {
     color: var(--main-color);
 }
 /* End Specail catogery */
+/* Start Featured Products */
+.products {
+    padding-bottom: 50px;
+}
+@media (max-width: 1200px) {
+    .products {
+        margin-top: -50px;
+    }
+}
+@media (max-width: 410px) {
+    .products .container h2 {
+        font-size: 38px;
+    }
+}
+.products .container .ul {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    text-align: center;
+}
+.products .container ul a {
+    padding: 15px 10px;
+    margin: 3px;
+    color: black;
+    transition: .3s;
+    font-weight: 600;
+}
+.products .container ul li:hover a {
+    color: var(--main-color);
+}
+.products .container .show {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    text-align: center;
+}
+.products .container .show .box > div {
+    position: relative;
+}
+.products .container .show .box > div img {
+    max-width: 100%;
+}
+.products .container .show .box > div img:first-child { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition-duration: .8s;
+    transform: rotateY(-180deg);
+}
+.products .container .show .box:hover img:first-child {
+    transform: rotateY(-360deg);
+}
+.products .container .show .box .p {
+    padding: 10px;
+}
+.products .container .show .box .p h3 {
+    color: var(--main-color);
+    font-family: 'Playpen Sans', cursive;
+}
+.products .container .show .box .p ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: orange;
+}
+.products .container .show .box .p p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.products .container .show .box .p .review-icons {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.products .container .show .box .p .review-icons i {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 3px;
+    transition: .3s;
+}
+.products .container .show .review-icons i:hover {
+    background-color: orange;
+    color: white;
+}
+/* End Featured Products */
+/* Start footer */
+.footer {
+    background-color: var(--main-color);
+}
+.footer .container {
+    width: 90%;
+    padding: 25px 0 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    column-gap: 25px;
+    row-gap: 15px;
+    text-align: center;
+}
+.footer .container .box h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: black;
+}
+.footer .container .box p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.footer .container .box p:hover {
+    color: black;
+}
+.footer .container .box i {
+    padding: 3px;
+    font-size: 13px;
+    color: #ccc;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .container .box i:hover {
+    color: black;
+}
+/* End footer */
