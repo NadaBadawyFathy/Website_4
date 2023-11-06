@@ -513,7 +513,7 @@ header .container .nav:hover {
 /* Start footer */
 .footer {
     background-color: var(--main-color);
-    background-image: url(../images/footer.jpg);
+    background-image: url(../images/footer.jpeg);
     background-size: cover;
     position: relative;
 }
