@@ -540,6 +540,7 @@ header .container .nav:hover {
 .footer .container .box h3 {
     font-size: 25px;
     font-weight: normal;
+    font-family: 'Playpen Sans', cursive;
     margin-bottom: 10px;
     color: black;
 }
@@ -563,6 +564,6 @@ header .container .nav:hover {
     z-index: 6;
 }
 .footer .container .box i:hover {
-    color: black;
+    color: orange;
 }
 /* End footer */
